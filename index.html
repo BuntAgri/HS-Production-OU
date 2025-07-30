@@ -1,79 +1,141 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V.E. BATIMENT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>HS Production OU</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
-    header, footer { background: #1f2937; color: white; text-align: center; padding: 30px; }
-    nav a { color: #fbbf24; margin: 0 12px; text-decoration: none; font-weight: 600; }
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; text-align: center; }
-    h2 { color: #1f2937; margin-bottom: 20px; font-size: 2.4em; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .gallery img { width: 100%; border-radius: 8px; }
-    .contact-form input, .contact-form textarea {
-      width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#f4f6f8;
+      color:#333;
+      line-height:1.6;
     }
-    iframe { width: 100%; height: 300px; border: 0; border-radius: 8px; margin-top: 20px; }
+    header{
+      background:url('https://avatars.mds.yandex.net/i?id=f71afcf2fbe34421ce3348cd62fe6a0d3dae5c9d-5682746-images-thumbs&n=13') center/cover no-repeat;
+      color:#fff;
+      text-align:center;
+      padding:100px 20px;
+      position:relative;
+    }
+    header::after{
+      content:'';
+      position:absolute;
+      top:0;left:0;
+      width:100%;height:100%;
+      background:rgba(0,0,0,0.5);
+    }
+    header h1,header p{
+      position:relative;
+      z-index:2;
+    }
+    header h1{
+      font-size:3rem;
+      margin-bottom:15px;
+      letter-spacing:2px;
+    }
+    header p{font-size:1.2rem;opacity:0.9;}
+    section{
+      max-width:1200px;
+      margin:50px auto;
+      padding:20px;
+    }
+    .flex{display:flex;gap:30px;flex-wrap:wrap;align-items:center;}
+    .text,.image{flex:1 1 45%;}
+    .image img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    }
+    h2{
+      font-size:2rem;
+      color:#1d3557;
+      margin-bottom:15px;
+    }
+    .cta{text-align:center;margin:40px 0;}
+    .cta a{
+      background:#1d3557;
+      color:#fff;
+      text-decoration:none;
+      padding:15px 35px;
+      border-radius:30px;
+      font-size:1rem;
+      transition:all 0.3s ease;
+    }
+    .cta a:hover{background:#457b9d;}
+    footer{
+      background:#1d3557;
+      color:#fff;
+      text-align:center;
+      padding:30px 20px;
+    }
+    footer p{margin:5px 0;}
+    @media(max-width:768px){
+      header h1{font-size:2.2rem;}
+      .flex .text,.flex .image{flex:1 1 100%;}
+    }
   </style>
 </head>
 <body>
+  <!-- Hero -->
+  <header>
+    <h1>HS Production OU</h1>
+    <p>Delivering Excellence in Retail & Miscellaneous Products</p>
+  </header>
 
-<header>
-  <h1>V.E. BATIMENT</h1>
-  <nav>
-    <a href="#about">Présentation</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-    <a href="#map">Adresse</a>
-  </nav>
-</header>
+  <!-- Who We Are -->
+  <section>
+    <div class="flex">
+      <div class="text">
+        <h2>Who We Are</h2>
+        <p>HS Production OU is an Estonian company specializing in retail and distribution of a wide range of miscellaneous products. We pride ourselves on quality and innovation.</p>
+      </div>
+      <div class="image">
+        <img src="https://avatars.mds.yandex.net/i?id=4d96fd323e223ce758b2e613daa6df3a67015c7c-4467478-images-thumbs&n=13" alt="Who We Are">
+      </div>
+    </div>
+  </section>
 
-<section id="about">
-  <h2>Présentation</h2>
-  <p>Basée à Les Mureaux, V.E. BATIMENT est une entreprise spécialisée dans la maçonnerie générale et les gros travaux de construction. Grâce à une équipe qualifiée, nous réalisons des chantiers sur mesure en respectant les normes de qualité et de sécurité.</p>
-</section>
+  <!-- Vision -->
+  <section>
+    <div class="flex">
+      <div class="image">
+        <img src="https://avatars.mds.yandex.net/i?id=8168350dfddeda8dae5456810e3dc7de5f48df32-5042325-images-thumbs&n=13" alt="Vision">
+      </div>
+      <div class="text">
+        <h2>Our Vision</h2>
+        <p>We aim to be a leading provider of retail products with a strong focus on customer satisfaction and long-term sustainability.</p>
+      </div>
+    </div>
+  </section>
 
-<section id="services">
-  <h2>Nos Services</h2>
-  <p>Gros œuvre de bâtiment, travaux de maçonnerie, fondations, rénovation structurelle, et accompagnement personnalisé pour tous vos projets de construction.</p>
-</section>
+  <!-- Why Choose Us -->
+  <section>
+    <div class="flex">
+      <div class="text">
+        <h2>Why Choose Us</h2>
+        <p>With a dedicated team and a robust supply chain, HS Production OU guarantees timely delivery, competitive pricing, and superior quality.</p>
+      </div>
+      <div class="image">
+        <img src="https://avatars.mds.yandex.net/i?id=b0b5e0e6ed50f499bf1cbbc26b53c8fc7470ed61-5482493-images-thumbs&n=13" alt="Why Choose Us">
+      </div>
+    </div>
+  </section>
 
-<section id="gallery">
-  <h2>Galerie</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1570126681032-3a7c41f13b0d?auto=format&fit=crop&w=800&q=80" alt="chantier 1">
-    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="chantier 2">
-    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="chantier 3">
+  <!-- CTA -->
+  <div class="cta">
+    <a href="mailto:contact@hsprod.shop">Contact Us Today</a>
   </div>
-</section>
 
-<section id="contact">
-  <h2>Contactez-nous</h2>
-  <p>Email : contact@vebatiment.shop</p>
-  <p>Téléphone : +33 6 05 99 64 90</p>
-  <form class="contact-form">
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Votre message"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
-
-<section id="map">
-  <h2>Adresse</h2>
-  <p>66 Avenue du Maréchal Foch, 78130 Les Mureaux, France</p>
-  <iframe src="https://www.google.com/maps?q=66+Avenue+du+Mar%C3%A9chal+Foch,+Les+Mureaux,+France&output=embed" allowfullscreen loading="lazy"></iframe>
-</section>
-
-<footer>
-  &copy; 2025 V.E. BATIMENT — Tous droits réservés
-</footer>
-
+  <!-- Footer -->
+  <footer>
+    <p><strong>Email:</strong> contact@hsprod.shop</p>
+    <p><strong>Phone:</strong> +372 5459 7294</p>
+    <p><strong>Address:</strong> Villa tn 14-8 Ulenurme alevik, 61714 Estonia</p>
+    <p>&copy; 2025 HS Production OU. All rights reserved.</p>
+  </footer>
 </body>
 </html>
